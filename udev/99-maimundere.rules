@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="input", KERNEL=="event*", ENV{ID_INPUT_KEYBOARD}=="1", ATTRS{name}=="*Logitech*", TAG+="systemd", ENV{SYSTEMD_USER_WANTS}+="maimundere@%k.service"

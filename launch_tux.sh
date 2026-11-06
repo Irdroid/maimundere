@@ -1,7 +1,9 @@
 #!/bin/bash
 
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+
 # 1. Launch SuperTuxKart in fullscreen kiosk/demo mode
-sudo /home/ji4ka/Downloads/SuperTuxKart-1.5-linux-x86_64/run_game.sh &
+/home/georgi/SuperTuxKart-1.5-linux-x86_64/run_game.sh &
 
 # 2. Wait for the window to actually open in the Linux display manager
 STK_WIN=""
@@ -15,6 +17,7 @@ done
 sleep 2
 
 # 4. Force the OS focus directly onto the SuperTuxKart window
+xdotool windowraise "$STK_WIN"
 xdotool windowactivate --sync $STK_WIN
 sleep 0.5
 
@@ -22,4 +25,4 @@ sleep 0.5
 xdotool key --window $STK_WIN Right
 xdotool key --window $STK_WIN Return
 
-sudo /home/ji4ka/maimundere/lock.sh 
+"$SCRIPT_DIR/lock.sh"

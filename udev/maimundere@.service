@@ -1,0 +1,13 @@
+[Unit]
+Description=SuperTuxKart kiosk for input device %I
+BindsTo=dev-input-%i.device
+After=dev-input-%i.device
+
+[Service]
+Type=exec
+WorkingDirectory=%h/maimundere
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=%t/gdm/Xauthority
+ExecStart=%h/maimundere/launch_tux.sh
+KillMode=control-group
+Restart=no

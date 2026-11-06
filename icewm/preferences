@@ -1,0 +1,41 @@
+# Minimal IceWM settings for the SuperTuxKart kiosk session.
+ShowTaskBar=0
+ShowWindowList=0
+ShowProgramsMenu=0
+ShowSettingsMenu=0
+ShowFocusModeMenu=0
+ShowThemesMenu=0
+ShowLogoutMenu=0
+ShowLogoutSubMenu=0
+ShowHelp=0
+ShowAbout=0
+ShowRun=0
+TaskBarFullscreenAutoShow=0
+WorkspaceNames=" 1 "
+QuickSwitch=0
+
+# Do not expose desktop menus or window-management shortcuts.
+DesktopMenuButton=0
+DesktopWinMenuButton=0
+DesktopWinListButton=0
+KeyWinClose=""
+KeyWinMenu=""
+KeyWinFullscreen=""
+KeySysSwitchNext=""
+KeySysSwitchLast=""
+KeySysSwitchClass=""
+KeySysWinNext=""
+KeySysWinPrev=""
+KeySysWinMenu=""
+KeySysDialog=""
+KeySysMenu=""
+KeySysWindowList=""
+KeySysAddressBar=""
+KeySysWorkspacePrev=""
+KeySysWorkspaceNext=""
+KeySysWorkspaceLast=""
+KeySysWorkspacePrevTakeWin=""
+KeySysWorkspaceNextTakeWin=""
+KeySysWorkspaceLastTakeWin=""
+KeySysHideAll=""
+KeySysShowDesktop=""
